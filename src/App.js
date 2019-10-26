@@ -1,12 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Index from '../src/components/Core/App'
 
 function App() {
   return (
-    <div className="App">
-      {process.env.REACT_APP_NOT_SECRET_CODE}
-    </div>
+    <Index/>
   );
 }
 
