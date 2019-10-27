@@ -29,8 +29,7 @@ const BoxBrand = () => {
               <Col key={i} className="d-flex justify-content-center">
                 <Img src={`/img/brand_logo/${data.img}`}/>
               </Col>
-            )
-          })
+            )})
           }
           <Col/>
         </Row>
