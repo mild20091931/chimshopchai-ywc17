@@ -2,7 +2,7 @@ import React from 'react';
 import MDreact from 'react-markdown/with-html';
 import styled from 'styled-components';
 import { Container, Row, Col } from 'reactstrap';
-import { Title,Header,P1, P3 } from '../Core/Text';
+import { Title,SubTitle,P1, P3 } from '../Core/Text';
 import color from '../Core/Color';
 
 const Bg = styled.div`
@@ -18,7 +18,7 @@ const BoxDetail = ({ detail,condition }) => {
         <Col md={10}>
           <Row>
             <Col>
-            <Title  color={color.headTitle}>มาตรการส่งเสริมการบริโภค<br/>ในประเทศ "ชิมช้อปใช้"</Title>
+            <SubTitle  color={color.headTitle}>มาตรการส่งเสริมการบริโภค<br/>ในประเทศ "ชิมช้อปใช้"</SubTitle>
             </Col>
           </Row>
         <Col className="mt-4">
