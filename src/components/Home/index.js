@@ -3,6 +3,7 @@ import api from '../Core/apiService';
 import Nav from '../Core/Nav';
 import Banner from '../Core/Banner';
 import RegisterDetail from './Register';
+import BoxDetail from './BoxDetail';
 
 class Index extends Component {
   state  = {
@@ -32,6 +33,7 @@ class Index extends Component {
         <Nav navbarItems={navbarItems}/>
         <Banner/>
         <RegisterDetail duration={duration}/>
+        <BoxDetail detail={detail} conditions={conditions}/>
       </Fragment>
     );
   }
