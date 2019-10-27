@@ -4,4 +4,5 @@ export default {
   headTitle: '#E6332A',
   font: '#333333',
   bgFooter: '#FAFAFA',
+  white: '#fff'
 }
