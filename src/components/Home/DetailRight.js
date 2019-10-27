@@ -3,12 +3,12 @@ import { Container, Row, Col } from 'reactstrap';
 import { Title,SubTitle,P2 } from '../Core/Text';
 import MDreact from 'react-markdown/with-html';
 
-const DetailRight = ({ subTitle, pathImg, video}) => {
+const DetailRight = ({ subTitle, pathImg, video, content}) => {
   console.log(video)
   return (
     <Container className="mt-4 md-4">
       <Row>
-        <Col lg={7} sm={12}>
+        <Col lg={7} sm={12} className="d-flex justify-content-center">
           {video === undefined ? 
               <img src={pathImg}/>
               :
@@ -23,6 +23,10 @@ const DetailRight = ({ subTitle, pathImg, video}) => {
               <MDreact escapeHtml={false} source={subTitle}/>
             </strong>
           </SubTitle>
+              <P2>{content !== undefined ?
+                <MDreact escapeHtml={false} source={content}/>:
+                ''
+              }</P2>
         </Col>
       </Row>
     </Container>
