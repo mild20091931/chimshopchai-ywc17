@@ -2,8 +2,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Container, Row, Col } from 'reactstrap';
-import { SubTitle } from '../Core/Text';
-import MDreact from 'react-markdown/with-html';
 
 const Bg = styled.div`
   margin: 70px 0px 70px 0px; 
