@@ -6,6 +6,7 @@ import RegisterDetail from './Register';
 import BoxDetail from './BoxDetail';
 import BoxCall from './BoxCallCenter';
 import Brand from './BoxBrand';
+import Footer from './Footer';
 // import Store from './DetailLeft';
 // import Step from './DetailRight';
 
@@ -56,6 +57,7 @@ class Index extends Component {
         /> */}
         <BoxCall/>
         <Brand/>
+        <Footer navbarItems={navbarItems}/>
       </Fragment>
     );
   }
