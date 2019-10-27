@@ -1,15 +1,21 @@
 import React, { Component, useState } from 'react';
 import styled from 'styled-components';
 import api from './api';
-import { Button } from 'reactstrap';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
-
+const NavIcon = styled.div`
+  width: 15%;
+  text-align: center;
+  cursor: pointer;
+  .navbar-toggler{
+    border:0px;
+  }
+`
 class NavBar extends Component {
   state  = {
     navbarItems: [],
-    collapsed:true,
-    crossNav:false,
+    collapsed: true,
+    crossNav: false,
   }
 
   componentDidMount = async () =>{
@@ -28,25 +34,38 @@ class NavBar extends Component {
       crossNav: !bool
     })
   }
+
   render() {
-    const { navbarItems,setCollapsed,collapsed,crossNav } = this.state;
+    const { crossNav,navbarItems } = this.state;
     return (
       <React.Fragment>
-        <Navbar color="faded" light>
+        <Navbar className="d-lg-none" color="faded" light>
         <NavbarBrand href="/" className="mr-auto">reactstrap</NavbarBrand>
-        <button onClick={() => this.handleClick(crossNav)}>
-          {crossNav ? <h3>X</h3>:<NavbarToggler/>}
-        </button>
+        <NavIcon onClick={() => this.handleClick(crossNav)}>
+            {crossNav ? <h3>X</h3> : <NavbarToggler/>}
+        </NavIcon>
         <Collapse isOpen={crossNav} navbar>
-          <Nav navbar>
-            <NavItem>
-              <NavLink href="/components/">Components</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-            </NavItem>
+          <Nav className="nav justify-content-center" navbar>
+          {navbarItems.map((data,i) => (
+            <React.Fragment>
+              <NavItem>
+                <NavLink href={data.href}>{data.label}</NavLink>
+              </NavItem>
+            </React.Fragment>
+          ))}
           </Nav>
         </Collapse>
+      </Navbar>
+      <Navbar color="faded" light expand="md" className="d-none d-lg-block d-xl-block">
+        <Nav className="nav justify-content-center" navbar>
+          {navbarItems.map((data,i) => (
+            <React.Fragment>
+              <NavItem>
+                <NavLink href={data.href}>{data.label}</NavLink>
+              </NavItem>
+            </React.Fragment>
+          ))}
+        </Nav>
       </Navbar>
     </React.Fragment>
     );
