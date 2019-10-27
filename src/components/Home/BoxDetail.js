@@ -18,7 +18,9 @@ const BoxDetail = ({ detail,condition }) => {
         <Col md={10}>
           <Row>
             <Col>
-            <SubTitle  color={color.headTitle}>มาตรการส่งเสริมการบริโภค<br/>ในประเทศ "ชิมช้อปใช้"</SubTitle>
+              <strong>
+                <SubTitle  color={color.headTitle}>มาตรการส่งเสริมการบริโภค<br/>ในประเทศ "ชิมช้อปใช้"</SubTitle>
+              </strong>
             </Col>
           </Row>
         <Col className="mt-4">

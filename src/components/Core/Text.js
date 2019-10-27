@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import size from './FontSize'
+import size from './FontSize';
+import color from './Color';
 
 export const Title = styled.h3`
   font-family: 'Prompt', sans-serif;
@@ -8,7 +9,7 @@ export const Title = styled.h3`
   `
 export const SubTitle = styled.p`
   font-family: 'Prompt', sans-serif;
-  color: ${props => props.color};
+  color: ${props => props.color || color.headTitle};
   font-size: ${size.subtitle};
   `
 export const Header = styled.p`

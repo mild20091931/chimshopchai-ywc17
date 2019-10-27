@@ -5,6 +5,7 @@ import Banner from '../Core/Banner';
 import RegisterDetail from './Register';
 import BoxDetail from './BoxDetail';
 import Store from './DetailLeft';
+import Step from './DetailRight';
 
 class Index extends Component {
   state  = {
@@ -35,7 +36,8 @@ class Index extends Component {
         <Banner/>
         <RegisterDetail duration={duration}/>
         <BoxDetail detail={detail} condition={condition}/>
-        <Store/>
+        <Store subTitle="ค้นหารายชื่อร้านค้า" pathImg='/img/banner_store.png'/>
+        <Step subTitle="ขั้นตอนการเข้าใช้งานผ่าน<br>แอปฯ เป๋าตัง" video="https://www.youtube.com/embed/ZkniwQLv_Xk"/>
       </Fragment>
     );
   }

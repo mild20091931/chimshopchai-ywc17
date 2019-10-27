@@ -16,7 +16,7 @@ class Register extends Component {
         </Row>
         <Row>
           <Col>
-            <Title className="text-center" color={color.headTitle}>{duration}</Title> 
+            <Title className="text-center" color={color.headTitle}><strong>{duration}</strong></Title> 
           </Col>
         </Row>
         <Row>
