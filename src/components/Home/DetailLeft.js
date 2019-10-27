@@ -1,7 +1,8 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import styled from 'styled-components';
 import { Container, Row, Col } from 'reactstrap';
-import { Title,SubTitle,P2 } from '../Core/Text';
+import { SubTitle } from '../Core/Text';
 import MDreact from 'react-markdown/with-html';
 
 const Bg = styled.div`
@@ -21,7 +22,7 @@ const DetailLeft = ({ subTitle,pathImg }) => {
             </SubTitle>
           </Col>
           <Col lg={7} sm={12} className="d-flex justify-content-center">
-            <img src={pathImg}/>
+            <img src={pathImg} />
           </Col>
         </Row>
       </Container>

@@ -1,6 +1,7 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import { Title,SubTitle,P2 } from '../Core/Text';
+import { SubTitle,P2 } from '../Core/Text';
 import MDreact from 'react-markdown/with-html';
 
 const DetailRight = ({ subTitle, pathImg, video, content}) => {
@@ -10,7 +11,8 @@ const DetailRight = ({ subTitle, pathImg, video, content}) => {
       <Row>
         <Col lg={7} sm={12} className="d-flex justify-content-center">
           {video === undefined ? 
-              <img src={pathImg}/>
+              // eslint-disable-next-line jsx-a11y/alt-text
+              <img src={ pathImg} />
               :
               <div class="embed-responsive embed-responsive-16by9">
                   <iframe class="embed-responsive-item" src={video} allowfullscreen></iframe>
