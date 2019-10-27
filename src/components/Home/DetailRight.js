@@ -1,10 +1,15 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 import React from 'react';
+import styled from 'styled-components';
 import { Container, Row, Col } from 'reactstrap';
 import { SubTitle,P2 } from '../Core/Text';
 import MDreact from 'react-markdown/with-html';
 
-const DetailRight = ({ subTitle, pathImg, video, content}) => {
+const Img = styled.img`
+  width: 168px;
+`
+
+const DetailRight = ({ subTitle, pathImg, video, content, pic1, pic2 }) => {
   console.log(video)
   return (
     <Container className="mt-4 md-4">
@@ -25,10 +30,14 @@ const DetailRight = ({ subTitle, pathImg, video, content}) => {
               <MDreact escapeHtml={false} source={subTitle}/>
             </strong>
           </SubTitle>
-              <P2>{content !== undefined ?
-                <MDreact escapeHtml={false} source={content}/>:
-                ''
-              }</P2>
+          <P2>
+            {content !== undefined ?
+              <MDreact escapeHtml={false} source={content}/>:
+              ''
+            }
+          </P2>
+          <Img className="mr-4" src={pic1}/>
+          <Img src={pic2}/>
         </Col>
       </Row>
     </Container>
