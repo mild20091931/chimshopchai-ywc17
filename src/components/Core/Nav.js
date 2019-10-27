@@ -1,6 +1,5 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
-import api from './apiService';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
 const NavIcon = styled.div`
@@ -12,21 +11,14 @@ const NavIcon = styled.div`
   }
 `
 class NavBar extends Component {
+  constructor(props) {
+    super(props);
+    this.navbarItems = this.props.navbarItems
+  }
+  
   state  = {
-    navbarItems: [],
     collapsed: true,
     crossNav: false,
-  }
-
-  componentDidMount = async () =>{
-    let data = await api.getData();
-    this.handleData(data.data.navbarItems);
-  }
-
-  handleData = async (items) => {
-    this.setState({
-      navbarItems : items
-    })
   }
 
   handleClick = (bool) => {
@@ -36,7 +28,8 @@ class NavBar extends Component {
   }
 
   render() {
-    const { crossNav,navbarItems } = this.state;
+    const { crossNav } = this.state;
+    const { navbarItems } = this.props;
     return (
       <React.Fragment>
         <Navbar className="d-md-none sticky-top" color="faded" light>
@@ -47,7 +40,7 @@ class NavBar extends Component {
         <Collapse isOpen={crossNav} navbar>
           <Nav className="nav justify-content-center" navbar>
           {navbarItems.map((data,i) => (
-            <React.Fragment>
+            <React.Fragment  key={i}>
               <NavItem>
                 <NavLink href={data.href}>{data.label}</NavLink>
               </NavItem>
@@ -59,7 +52,7 @@ class NavBar extends Component {
       <Navbar color="faded" light expand="md" className="d-none d-md-block d-xl-block sticky-top">
         <Nav className="nav justify-content-center" navbar>
           {navbarItems.map((data,i) => (
-            <React.Fragment>
+            <React.Fragment  key={i}>
               <NavItem>
                 <NavLink href={data.href}>{data.label}</NavLink>
               </NavItem>
