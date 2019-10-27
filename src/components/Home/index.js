@@ -10,7 +10,7 @@ class Index extends Component {
     navbarItems: [],
     duration: '',
     detail:'',
-    conditions:'',
+    condition:'',
   }
 
   componentDidMount = async () =>{
@@ -23,17 +23,17 @@ class Index extends Component {
       navbarItems : items.navbarItems,
       duration: items.duration,
       detail: items.detail,
-      conditions: items.conditions
+      condition: items.condition
     })
   }
   render() {
-    const { navbarItems, duration, detail, conditions } = this.state;
+    const { navbarItems, duration, detail, condition } = this.state;
     return (
       <Fragment>
         <Nav navbarItems={navbarItems}/>
         <Banner/>
         <RegisterDetail duration={duration}/>
-        <BoxDetail detail={detail} conditions={conditions}/>
+        <BoxDetail detail={detail} condition={condition}/>
       </Fragment>
     );
   }
