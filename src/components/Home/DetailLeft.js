@@ -13,14 +13,14 @@ const DetailLeft = ({ subTitle,pathImg }) => {
     <Bg>
       <Container>
         <Row>
-          <Col lg={5} sm={12} >
+          <Col lg={5} sm={12}>
             <SubTitle>
               <strong>
                 <MDreact escapeHtml={false} source={subTitle}/>
               </strong>
             </SubTitle>
           </Col>
-          <Col lg={7} sm={12}>
+          <Col lg={7} sm={12} className="d-flex justify-content-center">
             <img src={pathImg}/>
           </Col>
         </Row>
