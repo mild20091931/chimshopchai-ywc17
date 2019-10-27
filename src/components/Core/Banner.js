@@ -39,13 +39,11 @@ class Banner extends Component {
           {pathImg.map((data,i) => {
             return (
               <Col key={i}>
-                <Bg pathName={`/img/hero_banner/banner-${data.position}.png`}>
+                <Bg className="d-flex align-items-center" pathName={`/img/hero_banner/banner-${data.position}.png`}>
                   {data.position === 'center' ?
-                  <RowStyle>
-                    <Col className="d-flex justify-content-center align-self-center">
-                      <Img className="mw-100" src={'/img/hero_banner/banner.png'}/>
+                    <Col className="d-flex justify-content-center">
+                        <Img className="mw-100" src={'/img/hero_banner/banner.png'}/>
                     </Col>
-                  </RowStyle>
                   :''}
                 </Bg>
               </Col>

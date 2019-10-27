@@ -39,7 +39,7 @@ class NavBar extends Component {
     const { crossNav,navbarItems } = this.state;
     return (
       <React.Fragment>
-        <Navbar className="d-lg-none sticky-top" color="faded" light>
+        <Navbar className="d-md-none sticky-top" color="faded" light>
         <NavbarBrand href="/" className="mr-auto">reactstrap</NavbarBrand>
         <NavIcon onClick={() => this.handleClick(crossNav)}>
             {crossNav ? <h3>X</h3> : <NavbarToggler/>}
@@ -56,7 +56,7 @@ class NavBar extends Component {
           </Nav>
         </Collapse>
       </Navbar>
-      <Navbar color="faded" light expand="md" className="d-none d-lg-block d-xl-block sticky-top">
+      <Navbar color="faded" light expand="md" className="d-none d-md-block d-xl-block sticky-top">
         <Nav className="nav justify-content-center" navbar>
           {navbarItems.map((data,i) => (
             <React.Fragment>
