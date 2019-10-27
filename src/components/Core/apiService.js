@@ -1,4 +1,4 @@
-import api from "../../utils/apiService";
+import api from "../../utils/api";
 
 const Api = {
   getData: async () => {

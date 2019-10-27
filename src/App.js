@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import Index from '../src/components/Core/App'
+import Home from '../src/components/Home'
 
 function App() {
   return (
-    <Index/>
+    <Home/>
   );
 }
 
