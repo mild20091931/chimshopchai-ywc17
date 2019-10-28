@@ -65,7 +65,7 @@ const BoxBrand = ({ navbarItems }) => {
       <Container>
         <Row className="d-flex align-items-end" >
             <Col sm={12} md={3}>
-              <P3>Copyright © 2003-2019</P3>
+              <P3 className="mt-2 font-weight-bold">Copyright © 2003-2019</P3>
             </Col>
             {navbarItems.map((data,i) => {
               return (
