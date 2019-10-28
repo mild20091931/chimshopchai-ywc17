@@ -43,7 +43,7 @@ const BoxBrand = ({ navbarItems }) => {
           <Row >
             <Col className="d-none d-md-none d-xl-block"/>
               <Col>
-                <Img src="/img/footer.png"/>
+                <Img src="img/footer.png"/>
               </Col>
               {content.map((data,i) => {
                 return (
