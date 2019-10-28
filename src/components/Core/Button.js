@@ -11,4 +11,7 @@ export const ButtonRegister = styled.button`
   &:hover{
     background-color:${color.yellow};
   }
+  @media screen and (min-width: 325px) and (max-width: 768px) {
+    width: 100%;
+  }
 `
