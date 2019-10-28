@@ -10,6 +10,10 @@ const NavIcon = styled.div`
     border:0px;
   }
 `
+const Logo = styled.img`
+  width: 35px;
+  height: 48px;
+`
 class NavBar extends Component {
   constructor(props) {
     super(props);
@@ -33,7 +37,7 @@ class NavBar extends Component {
     return (
       <React.Fragment>
         <Navbar className="d-md-none sticky-top" color="white" light>
-        <NavbarBrand href="/" className="mr-auto">reactstrap</NavbarBrand>
+        <NavbarBrand href="/" className="mr-auto"><Logo src="img/footer.png"/></NavbarBrand>
         <NavIcon onClick={() => this.handleClick(crossNav)}>
             {crossNav ? <h3>X</h3> : <NavbarToggler/>}
         </NavIcon>
