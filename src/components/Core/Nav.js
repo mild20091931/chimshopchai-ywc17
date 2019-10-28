@@ -15,7 +15,6 @@ const Logo = styled.img`
   width: 35px;
   height: 48px;
 `
-
 const NavStyle = styled(Nav)`
   a {
     color: ${color.font};
@@ -76,12 +75,14 @@ class NavBar extends Component {
           ))}
         </Collapse>
       </Navbar>
-      <Navbar color="white" light expand="md" className="d-none d-md-block d-xl-block sticky-top">
+      <Navbar color="white" expand="md" className="d-none d-md-block d-xl-block sticky-top">
         <NavStyle className="justify-content-center">
           {navbarItems.map((data,i) => (
             <React.Fragment  key={i}>
               <NavItem>
-                <NavLink href={data.href}>{data.label}</NavLink>
+                <div className="hvr-underline-from-center">
+                  <NavLink href={data.href}>{data.label}</NavLink>
+                </div>
               </NavItem>
             </React.Fragment>
           ))}
