@@ -20,9 +20,8 @@ const NavStyle = styled(Nav)`
   a {
     color: ${color.font};
   }
-  &:hover {
+  a:hover {
     color: ${color.blue};
-
   }
 `
 const Collapse = styled.div`
