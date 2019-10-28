@@ -27,7 +27,7 @@ const BoxBrand = () => {
           {pathImg.map((data,i)=>{
             return (
               <Col key={i} className="d-flex justify-content-center">
-                <Img src={`/img/brand_logo/${data.img}`}/>
+                <Img src={`img/brand_logo/${data.img}`}/>
               </Col>
             )})
           }

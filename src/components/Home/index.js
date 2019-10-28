@@ -45,15 +45,15 @@ class Index extends Component {
         <Banner/>
         <RegisterDetail duration={duration}/>
         <BoxDetail detail={detail} condition={condition}/>
-        {/* <Store subTitle="ค้นหารายชื่อร้านค้า" pathImg='/img/banner_store.png'/>
+        {/* <Store subTitle="ค้นหารายชื่อร้านค้า" pathImg='img/banner_store.png'/>
         <Step subTitle="ขั้นตอนการเข้าใช้งานผ่าน<br>แอปฯ “เป๋าตัง”" video="https://www.youtube.com/embed/ZkniwQLv_Xk"/>
-        <Store subTitle="เติมเงินเข้า “เป๋าตัง”<br/> (G-Wallet)" pathImg='/img/banner_touup-GW.png'/>
+        <Store subTitle="เติมเงินเข้า “เป๋าตัง”<br/> (G-Wallet)" pathImg='img/banner_touup-GW.png'/>
         <Step
           subTitle="ใช้จ่าย สะดวก ปลอดภัย <br/> “เป๋าตัง” (G-Wallet)"
-          pathImg="/img/download.png"
+          pathImg="img/download.png"
           content={content}
-          pic1="/img/AppStore.png"
-          pic2="/img/GooglePlay.png"
+          pic1="img/AppStore.png"
+          pic2="img/GooglePlay.png"
         /> */}
         <BoxCall/>
         <Brand/>

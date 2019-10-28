@@ -17,7 +17,7 @@ const DetailRight = ({ subTitle, pathImg, video, content, pic1, pic2 }) => {
         <Col lg={7} sm={12} className="d-flex justify-content-center">
           {video === undefined ? 
               // eslint-disable-next-line jsx-a11y/alt-text
-              <img src={ pathImg} />
+              <img src={ pathImg } />
               :
               <div class="embed-responsive embed-responsive-16by9">
                   <iframe class="embed-responsive-item" src={video} allowfullscreen></iframe>
