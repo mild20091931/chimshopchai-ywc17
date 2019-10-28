@@ -36,7 +36,7 @@ const BoxCallCenter = () => {
           {pathImg.map((data,i)=>{
             return (
               <Col key={i} className="d-flex justify-content-center">
-                <img src={`/img/${data.img}`}/>
+                <img src={`img/${data.img}`}/>
               </Col>
             )
           })
