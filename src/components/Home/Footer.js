@@ -8,7 +8,7 @@ import MDreact from 'react-markdown/with-html';
 
 const Bg = styled.div`
   background-color: ${color.bgFooter};
-  height: 212px;
+  height: auto;
   padding: 30px;
   .mt-4 {
     margin-bottom: 10px;
@@ -39,15 +39,14 @@ const BoxBrand = ({ navbarItems }) => {
   return (
     <Fragment>
       <Bg>
-        <Container fluid={true}>
+        <Container>
           <Row >
-            <Col className="d-none d-md-none d-xl-block"/>
-              <Col>
+              <Col sm={12} md={3}  >
                 <Img src="img/footer.png"/>
               </Col>
               {content.map((data,i) => {
                 return (
-                  <Col>
+                  <Col sm={12} md={3}>
                     <P2 className="mt-4" color={color.headTitle}>
                       <strong>
                         {data.title}
@@ -59,27 +58,24 @@ const BoxBrand = ({ navbarItems }) => {
                   </Col>
                 )
               })}
-            <Col className="d-none d-md-none d-xl-block"/>
           </Row>
         </Container>
       </Bg>
       <CopyRightBg>
-      <Container fluid={true}>
-        <Row >
-          <Col className="d-none d-md-none d-xl-block"/>
-            <Col>
+      <Container>
+        <Row className="d-flex align-items-end" >
+            <Col sm={12} md={3}>
               <P3>Copyright © 2003-2019</P3>
             </Col>
             {navbarItems.map((data,i) => {
               return (
-                <Col>
-                  <P3>
+                <Col sm={12} md={3}>
+                  <P3 className="mt-2 font-weight-bold">
                     <a href={data.href}>{data.label}</a>
                   </P3>
                 </Col>
               )
             })}
-          <Col className="d-none d-md-none d-xl-block"/>
         </Row>
       </Container>
       </CopyRightBg>
