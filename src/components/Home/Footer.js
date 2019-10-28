@@ -16,7 +16,7 @@ const Bg = styled.div`
 `
 
 const CopyRightBg = styled.nav`
-  background-color: ${color.bule};
+  background-color: ${color.blue};
   color: ${color.white};
   /* height: 5vh; */
   a {
