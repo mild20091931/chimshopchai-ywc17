@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/chimshopchai-ywc17/precache-manifest.2740799881333d8ca3833afe5e3715ec.js"
+  "/chimshopchai-ywc17/precache-manifest.45d961e087efe0f5f93c81d51932c3de.js"
 );
 
 self.addEventListener('message', (event) => {
