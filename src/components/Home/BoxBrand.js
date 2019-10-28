@@ -34,14 +34,18 @@ const BoxBrand = () => {
             )})
           }
         </Row>
-        <Row className="d-none d-sm-block">
+      </Container>
+      <Container>
+      <Row className="d-none d-sm-block">
+              <Row>
           {pathImg.map((data,i)=>{
             return (
-              <Col key={i} className="d-flex justify-content-center">
-                <Img src={`img/brand_logo/${data.img}`}/>
-              </Col>
+                <Col md={2} lg={2} key={i} className="d-flex justify-content-center">
+                  <Img src={`img/brand_logo/${data.img}`}/>
+                </Col>
             )})
           }
+              </Row>
         </Row>
       </Container>
     </Bg>
