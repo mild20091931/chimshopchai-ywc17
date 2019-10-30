@@ -2,7 +2,7 @@ import React from 'react';
 import MDreact from 'react-markdown/with-html';
 import styled from 'styled-components';
 import { Container, Row, Col } from 'reactstrap';
-import { Title,SubTitle,P1, P3 } from '../Core/Text';
+import { SubTitle,P1 } from '../Core/Text';
 import color from '../Core/Color';
 
 const Bg = styled.div`
