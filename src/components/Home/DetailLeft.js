@@ -33,10 +33,11 @@ const DetailLeft = ({ subTitle,pathImg,msgButton }) => {
             <SubTitle>
               <MDreact escapeHtml={false} source={subTitle}/>
             </SubTitle>
-            { msgButton ? <PrimaryButton>
-              {msgButton}
-              <FaCaretRight/>
-            </PrimaryButton>: ''}
+              { msgButton ? 
+              <PrimaryButton>
+                {msgButton}
+                <FaCaretRight/>
+              </PrimaryButton>: ''}
           </Col>
           <Col lg={7} md={6} sm={12} className="d-flex justify-content-center order-md-2 oder-md-1">
             <Img src={pathImg} />

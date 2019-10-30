@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import color from './Color';
-import { Button } from 'reactstrap';
 
 export const ButtonRegister = styled.button`
   width: 50%;

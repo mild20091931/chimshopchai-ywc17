@@ -33,13 +33,13 @@ const BoxCallCenter = () => {
       <Container fluid={true}>
         <Row >
           <Col className="d-none d-md-none d-xl-block"/>
-          {pathImg.map((data,i)=>{
-            return (
-              <Col key={i} className="d-flex justify-content-center">
-                <img src={`img/${data.img}`}/>
-              </Col>
-            )
-          })}
+            {pathImg.map((data,i)=>{
+              return (
+                <Col key={i} className="d-flex justify-content-center">
+                  <img src={`img/${data.img}`}/>
+                </Col>
+              )
+            })}
           <Col className="d-none d-md-none d-xl-block"/>
         </Row>
       </Container>
