@@ -32,4 +32,8 @@ export const PrimaryButton = styled.button`
     background-color: ${color.blue};
     color: ${color.white};
   }
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    width: 100%;
+    margin-top:0px;
+  }
 `
