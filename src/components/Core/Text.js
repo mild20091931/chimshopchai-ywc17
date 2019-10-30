@@ -6,15 +6,17 @@ export const Title = styled.h3`
   font-family: 'Prompt', sans-serif;
   font-size: ${size.title};
   color: ${props => props.color};
-  @media screen and (min-width: 325px) and (max-width: 768px) {
-    font-size: ${size.subtitle};
+  font-weight: bold;
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    font-size: ${size.header};
   }
   `
 export const SubTitle = styled.p`
   font-family: 'Prompt', sans-serif;
   color: ${props => props.color || color.headTitle};
   font-size: ${size.subtitle};
-  @media screen and (min-width: 325px) and (max-width: 768px) {
+  font-weight: bold;
+  @media screen and (min-width: 320px) and (max-width: 768px) {
     font-size: ${size.header};
   }
   `
@@ -22,7 +24,8 @@ export const Header = styled.p`
   font-family: 'Prompt', sans-serif;
   color: ${props => props.color};
   font-size: ${size.header};
-  @media screen and (min-width: 325px) and (max-width: 768px) {
+  font-weight: bold;
+  @media screen and (min-width: 320px) and (max-width: 768px) {
     font-size: ${size.p1};
   }
   `
@@ -30,7 +33,7 @@ export const P1 = styled.p`
   font-size: ${size.p1};
   color: ${props => props.color};
   font-family: 'Bai Jamjuree', sans-serif;
-  @media screen and (min-width: 325px) and (max-width: 768px) {
+  @media screen and (min-width: 320px) and (max-width: 768px) {
     font-size: ${size.p2};
   }
   `

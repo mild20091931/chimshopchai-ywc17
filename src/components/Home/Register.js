@@ -22,7 +22,7 @@ class Register extends Component {
         <Row>
           <Col className="d-flex justify-content-center mt-4">
             <ButtonRegister>
-              <Header className="font-weight-bold">
+              <Header>
                 ลงทะเบียนเฟส 2 <br/>
                 ตั้งแต่วันที่ 24 ต.ค. 62 วันะ 2 รอย เวลา 6.00 และ 18.00 <br/>
                 (จำกัดจำนวนผู้ลงทะเบียนรอบละ 5 แสนคน รวม 1 ล้านคนต่อวัน)<br/>

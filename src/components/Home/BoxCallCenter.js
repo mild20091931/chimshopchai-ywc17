@@ -39,8 +39,7 @@ const BoxCallCenter = () => {
                 <img src={`img/${data.img}`}/>
               </Col>
             )
-          })
-          }
+          })}
           <Col className="d-none d-md-none d-xl-block"/>
         </Row>
       </Container>

@@ -18,9 +18,7 @@ const BoxDetail = ({ detail,condition }) => {
         <Col md={10}>
           <Row>
             <Col>
-              <strong>
-                <SubTitle  color={color.headTitle}>มาตรการส่งเสริมการบริโภค<br/>ในประเทศ "ชิมช้อปใช้"</SubTitle>
-              </strong>
+              <SubTitle  color={color.headTitle}>มาตรการส่งเสริมการบริโภค<br/>ในประเทศ "ชิมช้อปใช้"</SubTitle>
             </Col>
           </Row>
         <Col className="mt-4">
@@ -31,9 +29,7 @@ const BoxDetail = ({ detail,condition }) => {
         <Col className="mt-4">
             <P1 className="font-weight-bold">เงื่อนไขการเข้าร่วมมาตรการ</P1>
             <P1>
-              1. เป็นบุคคลสัญชาติไทย มีบัตรประจำตัวประชาชน<br/>
-              2. มีอายุตั้งแต่ 18 ปีบริบูรณ์ขึ้นไป ณ วันที่ลงทะเบียน<br/>
-              3. มีโทรศัพท์มือถือสมาร์ทโฟนที่สามารถเชื่อมต่อสัญญาณอินเทอร์เน็ตและมีอีเมล<br/>
+              <MDreact escapeHtml={false} source={condition}/>
             </P1>
         </Col>
         </Col>

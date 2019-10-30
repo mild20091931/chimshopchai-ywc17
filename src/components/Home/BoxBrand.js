@@ -31,21 +31,21 @@ const BoxBrand = () => {
               <Col sm={4} key={i} className={`col-4 text-${data.position}`}>
                 <Img src={`img/brand_logo/${data.img}`}/>
               </Col>
-            )})
-          }
+            )
+          })}
         </Row>
       </Container>
       <Container>
       <Row className="d-none d-sm-block">
-              <Row>
-          {pathImg.map((data,i)=>{
-            return (
+          <Row>
+            {pathImg.map((data,i)=>{
+              return (
                 <Col md={2} lg={2} key={i} className="d-flex justify-content-center">
                   <Img src={`img/brand_logo/${data.img}`}/>
                 </Col>
-            )})
-          }
-              </Row>
+              )
+            })}
+          </Row>
         </Row>
       </Container>
     </Bg>

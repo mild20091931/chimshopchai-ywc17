@@ -35,7 +35,7 @@ class Banner extends Component {
   render() {
     return (
       <Container fluid={true}>
-        <Row >
+        <Row>
           {pathImg.map((data,i) => {
             return (
               <Col key={i}>
