@@ -18,7 +18,6 @@ const Bg = styled.div`
 const CopyRightBg = styled.nav`
   background-color: ${color.blue};
   color: ${color.white};
-  /* height: 5vh; */
   a {
     color: ${color.white};
     text-decoration: none;
@@ -40,17 +39,15 @@ const BoxBrand = ({ navbarItems }) => {
     <Fragment>
       <Bg>
         <Container>
-          <Row >
+          <Row>
               <Col sm={12} md={3}  >
                 <Img src="img/footer.png"/>
               </Col>
               {content.map((data,i) => {
                 return (
                   <Col sm={12} md={3}>
-                    <P2 className="mt-4" color={color.headTitle}>
-                      <strong>
-                        {data.title}
-                      </strong>
+                    <P2 className="mt-4 font-weight-bold" color={color.headTitle}>
+                      {data.title}
                     </P2>
                     <P3 color={color.font}>
                       <MDreact escapeHtml={false} source={data.content}/>
