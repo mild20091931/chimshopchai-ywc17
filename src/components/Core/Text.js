@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import size from '../config/FontSize';
-import color from '../config/Color';
+import size from '../../config/FontSize';
+import color from '../../config/Color';
 
 export const Title = styled.h3`
   font-family: 'Prompt', sans-serif;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
-import color from '../config/Color';
+import color from '../../config/Color';
 
 const NavIcon = styled.div`
   width: 15%;

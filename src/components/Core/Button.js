@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import color from '../config/Color';
+import color from '../../config/Color';
 
 export const ButtonRegister = styled.button`
   width: 50%;

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { ButtonRegister } from '../Core/Button';
 import { Container, Row, Col } from 'reactstrap';
 import { Title, Header, P2 } from '../Core/Text';
-import color from '../config/Color';
+import color from '../../config/Color';
 
 class Register extends Component {
   render() {

@@ -2,7 +2,7 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import { Container, Row, Col } from 'reactstrap';
-import color from '../config/Color';
+import color from '../../config/Color';
 import { P3, P2 } from '../Core/Text';
 import MDreact from 'react-markdown/with-html';
 

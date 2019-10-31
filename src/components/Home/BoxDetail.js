@@ -3,7 +3,7 @@ import MDreact from 'react-markdown/with-html';
 import styled from 'styled-components';
 import { Container, Row, Col } from 'reactstrap';
 import { SubTitle, P1 } from '../Core/Text';
-import color from '../config/Color';
+import color from '../../config/Color';
 
 const Bg = styled.div`
   margin: 70px 0px 70px 0px;
