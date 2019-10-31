@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c280e281d36b556bfba5991c603cde68",
+    "revision": "c3dba4de10d359f08f81d7ca76f31b72",
     "url": "/chimshopchai-ywc17/index.html"
   },
   {
-    "revision": "1237b5e6740f1e82ad0a",
+    "revision": "9ee9d76141bf9d46bb1b",
     "url": "/chimshopchai-ywc17/static/css/2.0624914a.chunk.css"
   },
   {
-    "revision": "dc20ff2bd359bec0c913",
+    "revision": "d952a470b17e2295d4a1",
     "url": "/chimshopchai-ywc17/static/css/main.f890384f.chunk.css"
   },
   {
-    "revision": "1237b5e6740f1e82ad0a",
-    "url": "/chimshopchai-ywc17/static/js/2.c553511e.chunk.js"
+    "revision": "9ee9d76141bf9d46bb1b",
+    "url": "/chimshopchai-ywc17/static/js/2.dd6fd74c.chunk.js"
   },
   {
-    "revision": "dc20ff2bd359bec0c913",
-    "url": "/chimshopchai-ywc17/static/js/main.f28b72a0.chunk.js"
+    "revision": "d952a470b17e2295d4a1",
+    "url": "/chimshopchai-ywc17/static/js/main.f959dc26.chunk.js"
   },
   {
     "revision": "0789f42955c867ce3fbd",
