@@ -48,7 +48,7 @@ class Index extends Component {
         <BoxDetail detail={detail} condition={condition}/>
         <Store subTitle="ค้นหารายชื่อร้านค้า" pathImg='img/banner_store.png' msgButton="รายชื่อร้านค้าที่เข้าร่วมโครงการ"/>
         <Step subTitle="ขั้นตอนการเข้าใช้งานผ่าน<br>แอปฯ “เป๋าตัง”" video="https://www.youtube.com/embed/ZkniwQLv_Xk" msgButton="ขั้นตอนทั้งหมด"/>
-        <Store subTitle="เติมเงินเข้า “เป๋าตัง”<br/> (G-Wallet)" pathImg='img/banner_touup-GW.png' msgButton="ขั้นตอนทั้งหมด"/>
+        <Store subTitle="เติมเงินเข้า “เป๋าตัง”<br/> (G-Wallet)" pathImg='img/banner_touup-GW.png' msgButton="ดูขั้นตอนทั้งหมด"/>
         <Step
           subTitle="ใช้จ่าย สะดวก ปลอดภัย <br/> “เป๋าตัง” (G-Wallet)"
           pathImg="img/download.png"

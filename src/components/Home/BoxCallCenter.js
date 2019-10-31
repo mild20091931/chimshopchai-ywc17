@@ -15,7 +15,6 @@ const Bg = styled.div`
       width: 200px;
     }
   }
-
   @media (max-width: 430px) {
     img {
       width: 300px;

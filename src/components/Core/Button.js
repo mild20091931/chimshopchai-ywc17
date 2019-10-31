@@ -10,6 +10,7 @@ export const ButtonRegister = styled.button`
   border-radius: 5px;
   box-shadow: 0 15px 30px 0 rgba(28, 78, 132, 0.4);
   &:hover{
+    cursor: pointer;
     background-color:${color.yellow};
   }
   @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -28,6 +29,7 @@ export const PrimaryButton = styled.button`
   margin-top: 30px;
   font-weight: bold;
   &:hover{
+    cursor: pointer;
     background-color: ${color.blue};
     color: ${color.white};
   }
