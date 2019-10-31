@@ -3,7 +3,7 @@ import color from '../../config/Color';
 
 export const ButtonRegister = styled.button`
   width: 50%;
-  height: 20vh;
+  height: auto;
   background-color: ${color.blue};
   border: 0px;
   color: ${color.white};
