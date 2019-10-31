@@ -1,18 +1,13 @@
 import React from 'react';
 import MDreact from 'react-markdown/with-html';
-import styled from 'styled-components';
 import { Container, Row, Col } from 'reactstrap';
 import { SubTitle, P1 } from '../Core/Text';
 import color from '../../config/Color';
-
-const Bg = styled.div`
-  margin: 70px 0px 70px 0px;
-`;
+import { BgBox } from '../Core/Bg';
 
 const BoxDetail = ({ detail, condition }) => {
-  console.log(condition);
   return (
-    <Bg>
+    <BgBox margin="70px 0px 70px 0px">
       <Container>
         <Row>
           <Col md={10}>
@@ -39,7 +34,7 @@ const BoxDetail = ({ detail, condition }) => {
           </Col>
         </Row>
       </Container>
-    </Bg>
+    </BgBox>
   );
 };
 

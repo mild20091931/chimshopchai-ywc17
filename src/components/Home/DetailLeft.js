@@ -6,10 +6,7 @@ import { SubTitle } from '../Core/Text';
 import MDreact from 'react-markdown/with-html';
 import { PrimaryButton } from '../Core/Button';
 import { FaCaretRight } from 'react-icons/fa';
-
-const Bg = styled.div`
-  margin: 70px 0px 70px 0px;
-`;
+import { BgBox } from '../Core/Bg';
 
 const Img = styled.img`
   @media screen and (min-width: 320px) and (max-width: 375px) {
@@ -26,7 +23,7 @@ const Img = styled.img`
 
 const DetailLeft = ({ subTitle, pathImg, msgButton }) => {
   return (
-    <Bg>
+    <BgBox margin="70px 0px 70px 0px">
       <Container>
         <Row>
           <Col lg={5} md={6} sm={12} className="order-2">
@@ -47,7 +44,7 @@ const DetailLeft = ({ subTitle, pathImg, msgButton }) => {
           </Col>
         </Row>
       </Container>
-    </Bg>
+    </BgBox>
   );
 };
 

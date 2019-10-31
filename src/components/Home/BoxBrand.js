@@ -2,10 +2,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Container, Row, Col } from 'reactstrap';
+import { BgBox } from '../Core/Bg';
 
-const Bg = styled.div`
-  margin: 150px 0px 150px 0px;
-`;
 const Img = styled.img`
   width: 102px;
   @media screen and (min-width: 320px) and (max-width: 500px) {
@@ -23,7 +21,7 @@ const pathImg = [
 ];
 const BoxBrand = () => {
   return (
-    <Bg>
+    <BgBox margin="150px 0px 150px 0px">
       <Container>
         <Row className="d-sm-none">
           {pathImg.map((data, i) => {
@@ -48,7 +46,7 @@ const BoxBrand = () => {
           </Row>
         </Row>
       </Container>
-    </Bg>
+    </BgBox>
   );
 };
 
