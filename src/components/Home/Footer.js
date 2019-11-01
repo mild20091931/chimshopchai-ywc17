@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import { Container, Row, Col } from 'reactstrap';
 import color from '../../config/Color';
 import { P3, P2 } from '../Core/Text';
-import MDreact from 'react-markdown/with-html';
 
 const Bg = styled.div`
   background-color: ${color.bgFooter};
@@ -59,9 +58,10 @@ const BoxBrand = ({ navbarItems }) => {
                   <P2 className="mt-4 font-weight-bold" color={color.headTitle}>
                     {data.title}
                   </P2>
-                  <P3 color={color.font}>
-                    <MDreact escapeHtml={false} source={data.content} />
-                  </P3>
+                  <P3
+                    color={color.font}
+                    dangerouslySetInnerHTML={{ __html: data.content || '' }}
+                  ></P3>
                 </Col>
               );
             })}
