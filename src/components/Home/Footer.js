@@ -58,10 +58,7 @@ const BoxBrand = ({ navbarItems }) => {
                   <P2 className="mt-4 font-weight-bold" color={color.headTitle}>
                     {data.title}
                   </P2>
-                  <P3
-                    color={color.font}
-                    dangerouslySetInnerHTML={{ __html: data.content || '' }}
-                  ></P3>
+                  <P3 color={color.font} dangerouslySetInnerHTML={{ __html: data.content || '' }} />
                 </Col>
               );
             })}

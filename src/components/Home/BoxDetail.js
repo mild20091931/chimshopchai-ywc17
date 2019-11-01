@@ -20,11 +20,11 @@ const BoxDetail = ({ detail, condition }) => {
               </Col>
             </Row>
             <Col className="mt-4">
-              <P1 dangerouslySetInnerHTML={{ __html: detail || '' }}></P1>
+              <P1 dangerouslySetInnerHTML={{ __html: detail || '' }} />
             </Col>
             <Col className="mt-4">
               <P1 className="font-weight-bold">เงื่อนไขการเข้าร่วมมาตรการ</P1>
-              <P1 dangerouslySetInnerHTML={{ __html: condition || '' }}></P1>
+              <P1 dangerouslySetInnerHTML={{ __html: condition || '' }} />
             </Col>
           </Col>
         </Row>
