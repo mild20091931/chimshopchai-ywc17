@@ -11,10 +11,12 @@ const NavIcon = styled.div`
     border: 0px;
   }
 `;
+
 const Logo = styled.img`
   width: 35px;
   height: 48px;
 `;
+
 const NavStyle = styled(Nav)`
   a {
     color: ${color.font};
@@ -23,6 +25,7 @@ const NavStyle = styled(Nav)`
     color: ${color.blue};
   }
 `;
+
 const Collapse = styled.div`
   background-color: ${color.white};
   visibility: ${props => props.visibility};
@@ -34,16 +37,12 @@ const Collapse = styled.div`
   left: 0px;
   right: 0px;
   text-align: right;
+  transition: all 1s;
   a {
     color: ${color.font};
   }
 `;
 class NavBar extends Component {
-  constructor(props) {
-    super(props);
-    this.navbarItems = this.props.navbarItems;
-  }
-
   state = {
     collapsed: true,
     crossNav: false,
@@ -69,22 +68,20 @@ class NavBar extends Component {
           </NavIcon>
           <Collapse isOpen={crossNav} visibility={crossNav ? 'visible' : 'hidden'}>
             {navbarItems.map((data, i) => (
-              <React.Fragment key={i}>
-                <NavLink href={data.href}>{data.label}</NavLink>
-              </React.Fragment>
+              <NavLink href={data.href} key={i}>
+                {data.label}
+              </NavLink>
             ))}
           </Collapse>
         </Navbar>
         <Navbar color="white" expand="md" className="d-none d-md-block d-xl-block sticky-top">
           <NavStyle className="justify-content-center">
             {navbarItems.map((data, i) => (
-              <React.Fragment key={i}>
-                <NavItem>
-                  <div className="hvr-underline-from-center">
-                    <NavLink href={data.href}>{data.label}</NavLink>
-                  </div>
-                </NavItem>
-              </React.Fragment>
+              <NavItem key={i}>
+                <div className="hvr-underline-from-center">
+                  <NavLink href={data.href}>{data.label}</NavLink>
+                </div>
+              </NavItem>
             ))}
           </NavStyle>
         </Navbar>
