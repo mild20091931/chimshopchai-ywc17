@@ -37,7 +37,6 @@ const Collapse = styled.div`
   left: 0px;
   right: 0px;
   text-align: right;
-  transition: all 1s;
   a {
     color: ${color.font};
   }
