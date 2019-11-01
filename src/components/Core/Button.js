@@ -8,6 +8,7 @@ export const ButtonRegister = styled.button`
   border: 0px;
   color: ${color.white};
   border-radius: 5px;
+  padding: 1em;
   box-shadow: 0 15px 30px 0 rgba(28, 78, 132, 0.4);
   &:hover {
     cursor: pointer;
