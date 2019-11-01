@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import { Container, Row, Col } from 'reactstrap';
 import color from '../../config/Color';
-import { P3, P2 } from '../Core/Text';
+import { P3, P2 } from './Text';
 
 const Bg = styled.div`
   background-color: ${color.bgFooter};
