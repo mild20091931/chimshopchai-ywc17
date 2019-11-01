@@ -6,7 +6,7 @@ import RegisterDetail from './Register';
 import BoxDetail from './BoxDetail';
 import BoxCall from './BoxCallCenter';
 import Brand from './BoxBrand';
-import Footer from './Footer';
+import Footer from './../Core/Footer';
 
 class Index extends Component {
   _isMounted = false;
