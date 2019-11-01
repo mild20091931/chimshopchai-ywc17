@@ -19,8 +19,10 @@ class Index extends Component {
 
   componentDidMount = async () => {
     this._isMounted = true;
-    let data = await api.getData();
-    this.handleData(data.data);
+    if (this._isMounted) {
+      let data = await api.getData();
+      this.handleData(data.data);
+    }
   };
 
   componentWillUnmount() {
