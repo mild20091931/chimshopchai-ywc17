@@ -9,6 +9,7 @@ import Brand from './BoxBrand';
 import Footer from './Footer';
 
 class Index extends Component {
+  _isMounted = false;
   state = {
     navbarItems: [],
     duration: '',
@@ -17,11 +18,16 @@ class Index extends Component {
   };
 
   componentDidMount = async () => {
+    this._isMounted = true;
     let data = await api.getData();
     this.handleData(data.data);
   };
 
-  handleData = async items => {
+  componentWillUnmount() {
+    this._isMounted = false;
+  }
+
+  handleData = items => {
     this.setState({
       navbarItems: items.navbarItems,
       duration: items.duration,
