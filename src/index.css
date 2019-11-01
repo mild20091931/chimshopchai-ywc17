@@ -11,17 +11,17 @@ body {
 
 @font-face {
   font-family: 'TATSanaSuksaBold';
-  src: url('/public/fonts/TATSanaChon-Bold.woff2') format('woff2');
+  src: url('./fonts/TATSanaChon-Bold.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'TATSanaChon';
-  src: url('/public/fonts/TATSanaChon-Regular.woff2') format('woff2');
+  src: url('./fonts/TATSanaChon-Regular.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'TATSanaSuksa';
-  src: url('/public/fonts/TATSanaSuksa-Regular.woff2') format('woff2');
+  src: url('./fonts/TATSanaSuksa-Regular.woff2') format('woff2');
 }
 
 code {
