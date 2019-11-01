@@ -1,5 +1,4 @@
 import React from 'react';
-import MDreact from 'react-markdown/with-html';
 import { Container, Row, Col } from 'reactstrap';
 import { SubTitle, P1 } from '../Core/Text';
 import color from '../../config/Color';
@@ -21,15 +20,11 @@ const BoxDetail = ({ detail, condition }) => {
               </Col>
             </Row>
             <Col className="mt-4">
-              <P1>
-                <MDreact escapeHtml={false} source={detail} />
-              </P1>
+              <P1 dangerouslySetInnerHTML={{ __html: detail || '' }}></P1>
             </Col>
             <Col className="mt-4">
               <P1 className="font-weight-bold">เงื่อนไขการเข้าร่วมมาตรการ</P1>
-              <P1>
-                <MDreact escapeHtml={false} source={condition} />
-              </P1>
+              <P1 dangerouslySetInnerHTML={{ __html: condition || '' }}></P1>
             </Col>
           </Col>
         </Row>
