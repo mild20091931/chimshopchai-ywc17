@@ -54,7 +54,7 @@ const BoxBrand = ({ navbarItems }) => {
             </Col>
             {content.map((data, i) => {
               return (
-                <Col sm={12} md={3}>
+                <Col key={i} sm={12} md={3}>
                   <P2 className="mt-4 font-weight-bold" color={color.headTitle}>
                     {data.title}
                   </P2>
@@ -73,7 +73,7 @@ const BoxBrand = ({ navbarItems }) => {
             </Col>
             {navbarItems.map((data, i) => {
               return (
-                <Col sm={12} md={3}>
+                <Col key={i} sm={12} md={3}>
                   <P3 className="mt-2 font-weight-bold">
                     <a href={data.href}>{data.label}</a>
                   </P3>

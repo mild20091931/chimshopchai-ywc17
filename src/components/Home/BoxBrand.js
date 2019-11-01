@@ -32,7 +32,7 @@ const BoxBrand = () => {
         <Row className="d-sm-none">
           {pathImg.map((data, i) => {
             return (
-              <Col sm={4} key={i} className={`col-4 text-${data.position}`}>
+              <Col key={i} sm={4} className={`col-4 text-${data.position}`}>
                 <NavLink href={data.link}>
                   <Img src={`img/brand_logo/${data.img}`} />
                 </NavLink>
